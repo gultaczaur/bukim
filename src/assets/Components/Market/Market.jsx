@@ -36,7 +36,7 @@ const Market = () => {
   let [data, setdata] = useState(marketdata); 
 
   const marketfunck = (a) => {
-    const filter = marketdata.filter((item) => item.title[0] === a);
+    let filter = marketdata.filter((item) => item.title[0] === a);
     setdata(filter); 
   };
 

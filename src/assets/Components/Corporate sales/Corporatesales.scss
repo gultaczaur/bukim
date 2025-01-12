@@ -1,0 +1,37 @@
+.corporate-sec{
+    margin: 30px 0;
+    padding: 30px 0;
+    h2{
+        text-align: center;
+        line-height: 1.2;
+        font-weight: 600;
+        font-size: 35px;
+        color: #373a36;
+        margin-bottom: 20px;
+    }
+    .corporate-text{
+        width: 1250px;
+        overflow: hidden;
+        margin: 0 auto;
+        .img{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            img{
+                width: 1200px;
+            }
+        }
+        h4{
+            font-weight: 700;
+            font-size: 155%;
+            letter-spacing: .15px;
+            line-height: 1.35;
+            margin: 8px 0 30px
+        }  
+        p{
+            font-size: 18px;
+            margin: 0 0 30px;
+            color: #373a36;
+        }      
+    }
+}
