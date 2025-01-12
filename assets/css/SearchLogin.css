@@ -1,0 +1,218 @@
+.Searc-login {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+  text-align: center;
+}
+.Searc-login h3 {
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 35px;
+  color: #373a36;
+}
+.Searc-login .Logintext {
+  width: 430px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Searc-login .Logintext .span {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 25px;
+  text-align: center;
+  color: #373a36;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0;
+  height: 50px;
+  cursor: pointer;
+}
+.Searc-login .Logintext .spancolor {
+  color: #fff !important;
+  background: #13B5F5 !important;
+  border-radius: 5px !important;
+}
+.Searc-login .logboxs {
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+.Searc-login .logboxs .loginbox {
+  width: 430px;
+  height: 455px;
+  background-color: white;
+  padding: 25px;
+  position: relative;
+  animation: startlogbox 0.3s forwards;
+}
+.Searc-login .logboxs .registerbox {
+  position: relative;
+  width: 430px;
+  height: 590px;
+  background-color: white;
+  padding: 25px;
+  animation: startregbox 0.3s forwards;
+}
+.Searc-login .logboxs .registerbox .form .pasinp {
+  margin: 0 !important;
+}
+.Searc-login .logboxs .a .form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+}
+.Searc-login .logboxs .a .form h4 {
+  display: block;
+  margin: 0 0 20px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.Searc-login .logboxs .a .form .inp {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #dedede;
+  background: #fff;
+  color: #4D5562;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.Searc-login .logboxs .a .form .inp:focus {
+  border: 1px solid rgb(66, 66, 255);
+}
+.Searc-login .logboxs .a .form .pasinp {
+  width: 100%;
+  position: relative;
+}
+.Searc-login .logboxs .a .form .pasinp .eye {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.Searc-login .logboxs .a .form .pasinp .eye:hover {
+  transform: scale(1.2);
+}
+.Searc-login .logboxs .a .form .pasinp .slasheye {
+  display: none;
+}
+.Searc-login .logboxs .a .form p {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.Searc-login .logboxs .a .form .loginbox-img {
+  margin-bottom: 30px;
+}
+.Searc-login .logboxs .a .form .checkform {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 20px;
+}
+.Searc-login .logboxs .a .form .checkform .checkinp {
+  gap: 5px;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+.Searc-login .logboxs .a .form .checkform .checkbox {
+  accent-color: #007edb;
+}
+.Searc-login .logboxs .a .form .checkform span {
+  margin-right: 10px;
+}
+.Searc-login .logboxs .a .form .checkform span span {
+  color: red;
+}
+.Searc-login .logboxs .a .form .checkform a {
+  color: #007edb;
+  transition: 0.4s;
+  font-weight: 500;
+  text-decoration: underline rgba(255, 255, 255, 0);
+}
+.Searc-login .logboxs .a .form .checkform a:hover {
+  color: black;
+  text-decoration: underline;
+}
+.Searc-login .logboxs .a .form button {
+  padding: 17px 25px;
+  border: 1px solid #ffd100;
+  color: #373a36;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #ffd100;
+  width: 100%;
+  cursor: pointer;
+}
+.Searc-login .logboxs .a .form button:hover {
+  background-color: #373a36;
+  color: white;
+  border: 1px solid #373a36;
+}
+.Searc-login .logboxs .endlogbox {
+  animation: endlogbox 0.3s forwards !important;
+}
+.Searc-login .logboxs .endregbox {
+  animation: endregbox 0.3s forwards;
+}
+
+.errortext {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+@keyframes startlogbox {
+  from {
+    opacity: 0;
+    left: -200px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes endlogbox {
+  from {
+    opacity: 1;
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    left: -200px;
+  }
+}
+@keyframes startregbox {
+  from {
+    opacity: 0;
+    left: 200px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes endregbox {
+  from {
+    opacity: 1;
+    left: 0;
+  }
+  to {
+    opacity: 0;
+    left: 200px;
+  }
+}

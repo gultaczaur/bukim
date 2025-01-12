@@ -1,0 +1,106 @@
+.market-sec{
+    margin-top: 30px;
+    padding-top: 30px;
+    h2{
+        text-align: center;
+        line-height: 1.2;
+        font-weight: 600;
+        font-size: 35px;
+        color: #373a36;
+        margin-bottom: 20px;
+    }
+    .a-z{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+        
+        .box{
+            padding: 12px 20px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #373a36;
+            &:hover{
+                background-color: #F3F3F3;
+            }            
+        }
+    }
+    .marketboxs{
+        display: flex;
+        gap: 30px;
+        width: 85%;
+        margin: 30px auto;
+        flex-wrap: wrap;
+        .marketbox{
+            width: 610px;
+            height: 310px;
+            padding: 30px;
+            background: #F3F3F3;
+            display: flex;
+            justify-content: space-between;
+            transition: .5s;
+            .imgbox{
+                width: 240px;
+                height: 240px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                img{
+                    width: 100%;
+                    height: 180px;
+                }
+                a{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    background: #ffd100;
+                    color: #373a36;
+                    font-size: 18px;
+                    width: 240px;
+                    height: 40px;
+                    text-align: center;
+                    font-weight: 400;
+                    line-height: 40px;
+                    border-radius: 30px;
+                    gap: 10px;
+                    transition: .4s;
+                    &:hover{
+                        color: white;
+                        background-color: #373a36;
+                    }
+                }
+            }
+            .markrt-text{
+                padding: 0 20px;
+                h3{
+                    box-sizing: border-box;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #000;
+                    line-height: 1.3;
+                    margin-bottom: 20px;
+                }
+                p{
+                    box-sizing: border-box;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: #000;
+                    line-height: 1.3;
+                    opacity: 0.8;
+                    margin-bottom: 20px;
+                }
+                span{
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
+            &:hover{
+                background-color: #eaeaea;
+            }
+        }
+    }
+}

@@ -1,0 +1,346 @@
+header {
+  position: static;
+  z-index: -999;
+}
+header .HeaderOne {
+  background: #373A36;
+}
+header .HeaderOne .headerOne-boxs {
+  display: flex;
+  justify-content: space-between;
+  width: 83%;
+  margin: 0 auto;
+}
+header .HeaderOne .headerOne-boxs span {
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 600;
+}
+header .HeaderOne .headerOne-boxs span:hover {
+  color: #9d9d9d;
+}
+header .HeaderOne .headerOne-boxs .headerleft {
+  display: flex;
+  gap: 20px;
+  padding: 9px 0;
+}
+header .HeaderOne .headerOne-boxs .headerright {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+header .HeaderOne .headerOne-boxs .headerright .header-icone-one {
+  transform: scaleX(1.5);
+  transform: scaleY(0.7);
+  margin-bottom: -4px;
+  font-size: 18px;
+}
+header .HeaderOne .headerOne-boxs .headerright .header-icone-two {
+  margin-bottom: -4px;
+  font-size: 18px;
+}
+header .HeaderTwo {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 213, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .HeaderTwo .headerTwo-boxs {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+header .HeaderTwo .headerTwo-boxs .logo img {
+  width: 240px;
+  height: 78px;
+  margin-bottom: 18px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns {
+  display: flex;
+  align-items: center;
+  width: 800px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs {
+  position: relative;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon {
+  margin: 0 5px;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line {
+  width: 30px;
+  height: 3.5px;
+  background-color: #373A36;
+  position: relative;
+  border-radius: 8px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #373A36;
+  position: absolute;
+  top: -10px;
+  border-radius: 8px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #373A36;
+  position: absolute;
+  top: 10px;
+  border-radius: 8px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line-start {
+  height: 0;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line-start::after {
+  animation: afterline1 0.5s forwards;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line-start::before {
+  animation: beforeline1 0.5s forwards;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line-end::after {
+  animation: afterline2 0.5s forwards;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .baricon .line-end::before {
+  animation: beforeline2 0.5s forwards;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox {
+  position: absolute;
+  top: 70px;
+  width: 260px;
+  height: 549px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px black;
+  left: -100px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul {
+  position: relative;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul li {
+  padding: 15px 17px 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul li a {
+  display: block;
+  padding: 0 0 17px;
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.216);
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul li a .fire {
+  color: red;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul li a .icon {
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul li:hover {
+  background-color: #f4f4f4;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul .lihover-one .hoverdiv-One {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.181);
+  display: none;
+  z-index: 1;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox ul .lihover-one:hover .hoverdiv-One {
+  display: block;
+  animation: hoveranimation 0.4s forwards;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  rotate: 45deg;
+  background-color: white;
+  display: block;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs .ulbox1 {
+  display: none !important;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .barboxs1::before {
+  display: none !important;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .formbox {
+  margin: 0 15px;
+  width: 589px;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .formbox form {
+  display: flex;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .formbox form input {
+  display: block;
+  margin: 0;
+  padding: 0 15px;
+  height: 40px;
+  width: 87%;
+  float: left;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .formbox form button {
+  width: 60px;
+  height: 40px;
+  border: none;
+  background-color: #373A36;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .formbox form button:hover {
+  background-color: #5b5b5b;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .btn a {
+  display: block;
+  background: #13B5F5;
+  font-size: 17px;
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  width: 120px;
+  height: 40px;
+  transition: 0.5s;
+}
+header .HeaderTwo .headerTwo-boxs .headerbtns .btn a:hover {
+  background-color: black;
+}
+header .HeaderTwo .headerTwo-boxs .icones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header .HeaderTwo .headerTwo-boxs .icones .icone {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 43px;
+  cursor: pointer;
+  position: relative;
+}
+header .HeaderTwo .headerTwo-boxs .icones .icone .shop {
+  margin-bottom: 5px;
+  font-size: 38px;
+}
+header .HeaderTwo .headerTwo-boxs .icones .icone span {
+  font-size: 13px;
+  position: absolute;
+  bottom: -4px;
+  right: -2px;
+  background-color: #13B5F5;
+  min-width: 10px;
+  max-width: auto;
+  height: 10px;
+  border-radius: 50%;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+}
+
+@keyframes afterline1 {
+  0% {
+    top: -10px;
+  }
+  25% {
+    top: 0;
+  }
+  100% {
+    rotate: 225deg;
+    top: 0;
+  }
+}
+@keyframes afterline2 {
+  0% {
+    rotate: 225deg;
+    top: 0;
+  }
+  75% {
+    top: 0;
+    rotate: 180deg;
+  }
+  100% {
+    top: -10px;
+    rotate: 180deg;
+  }
+}
+@keyframes beforeline1 {
+  0% {
+    top: 10px;
+  }
+  25% {
+    top: 0;
+  }
+  100% {
+    rotate: -225deg;
+    top: 0;
+  }
+}
+@keyframes beforeline2 {
+  0% {
+    rotate: -225deg;
+    top: 0;
+  }
+  75% {
+    top: 0;
+    rotate: -180deg;
+  }
+  100% {
+    top: 10px;
+    rotate: -180deg;
+  }
+}
+@media (max-width: 992px) {
+  .HeaderOne {
+    display: none;
+  }
+}
+@keyframes hoveranimation {
+  from {
+    left: 70%;
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+    left: 100%;
+  }
+}

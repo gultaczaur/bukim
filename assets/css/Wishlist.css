@@ -1,0 +1,153 @@
+.wishlistsection {
+  margin-top: 30px;
+  padding-top: 30px;
+  text-align: center;
+}
+.wishlistsection h2 {
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 35px;
+  color: #373a36;
+}
+.wishlistsection .wisboxs {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.wishlistsection .wisboxs .wistext {
+  width: 288px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.wishlistsection .wisboxs .wistext .textbox {
+  border: 1px solid #707070;
+}
+.wishlistsection .wisboxs .wistext .textbox .textbox-h2 {
+  background: #e2e2e2;
+  padding: 16px 15px;
+  line-height: 20px;
+  text-align: center;
+  border-bottom: 1px solid #707070;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.wishlistsection .wisboxs .wistext .textbox .textbox-p {
+  text-align: start;
+  font-size: 16px;
+  background: #fff;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+.wishlistsection .wisboxs .wistext .Passagelog {
+  border: 1px solid #707070;
+  text-align: start;
+}
+.wishlistsection .wisboxs .wistext .Passagelog .textbox-h2 {
+  background: #e2e2e2;
+  padding: 16px 15px;
+  line-height: 20px;
+  text-align: center;
+  border-bottom: 1px solid #707070;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.wishlistsection .wisboxs .wistext .Passagelog p {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.wishlistsection .wisboxs .wistext .Passagelog p span {
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #373a36;
+  transition: 0.4s;
+}
+.wishlistsection .wisboxs .wistext .Passagelog p:hover span {
+  color: blue;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproducts-text {
+  display: flex;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproducts-text .producbox {
+  border: 1px solid rgba(112, 112, 112, 0.5450980392);
+  background: #e2e2e2;
+  padding: 15px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: center;
+  color: #373a36;
+  width: 154px;
+  height: 54px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproducts-text .product-name {
+  width: 358px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproducts-text .stock-status {
+  width: 175px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproducts-text .unit-price {
+  width: 140px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproducts-text .order {
+  width: 101px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct {
+  display: flex;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .img {
+  width: 154px;
+  height: 150px;
+  padding: 9px 12px;
+  border: 1px solid rgba(112, 112, 112, 0.537254902);
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .img img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .title {
+  width: 358px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .title span {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .title span:hover {
+  color: rgb(55, 55, 205);
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .stock {
+  width: 175px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .stock span {
+  color: red;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .price {
+  width: 140px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .price span {
+  font-weight: 500;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .price span span {
+  color: green;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .delete {
+  width: 101px;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .delete .delete-icone {
+  font-size: 32px;
+  cursor: pointer;
+}
+.wishlistsection .wisboxs .wislisproducts .wislisproduct .delete .delete-icone:hover {
+  color: red;
+}

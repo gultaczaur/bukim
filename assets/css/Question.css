@@ -1,0 +1,152 @@
+.question-sec {
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.question-sec h3 {
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 35px;
+  color: #373a36;
+  margin-bottom: 20px;
+}
+.question-sec .quest-boxs {
+  width: 80%;
+  margin: 0 auto;
+}
+.question-sec .quest-boxs .questbox {
+  position: relative;
+  height: 50px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #707070;
+  background: #f1f1f1;
+  animation: boxheightend 0.6s forwards;
+}
+.question-sec .quest-boxs .questbox h2 {
+  padding: 15px 0;
+  margin: 0 20px;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: 0.3s ease;
+  color: #323232;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+.question-sec .quest-boxs .questbox p {
+  padding: 20px 20px 10px;
+  position: relative;
+  box-sizing: border-box;
+  border: 0;
+  background: #f1f1f1;
+  font-size: 18px;
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+.question-sec .quest-boxs .questbox p span {
+  color: red;
+  font-weight: 600;
+}
+.question-sec .quest-boxs .questbox p em {
+  display: block;
+}
+.question-sec .quest-boxs .questbox p h4 {
+  font-size: 14px;
+}
+.question-sec .quest-boxs .questbox .icone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+  margin: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
+.question-sec .quest-boxs .questbox .icone .plusStart {
+  animation: plusStart 0.2s forwards;
+}
+.question-sec .quest-boxs .questbox .icone .plusEnd {
+  animation: plusEnd 0.2s forwards;
+}
+.question-sec .quest-boxs .questbox .icone .minusStart {
+  animation: minusStart 0.2s forwards;
+}
+.question-sec .quest-boxs .questbox .icone .minusEnd {
+  animation: minusEnd 0.2s forwards;
+}
+.question-sec .quest-boxs .quest-boxs-start {
+  animation: boxheightstart 1s forwards;
+}
+.question-sec .quest-boxs .boxheightstartader {
+  animation: boxheightstartader 1s forwards;
+}
+.question-sec .quest-boxs .boxheightendtader {
+  animation: boxheightendtader 0.6s forwards !important;
+}
+
+@keyframes plusStart {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 180deg;
+  }
+}
+@keyframes plusEnd {
+  from {
+    rotate: 180deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes minusStart {
+  from {
+    rotate: 0;
+  }
+  to {
+    rotate: 180deg;
+  }
+}
+@keyframes minusEnd {
+  from {
+    rotate: 180deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes boxheightstart {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 160px;
+  }
+}
+@keyframes boxheightend {
+  from {
+    height: 160px;
+  }
+  to {
+    height: 50px;
+  }
+}
+@keyframes boxheightstartader {
+  from {
+    height: 50px;
+  }
+  to {
+    height: 280px;
+  }
+}
+@keyframes boxheightendtader {
+  from {
+    height: 280px;
+  }
+  to {
+    height: 50px;
+  }
+}
