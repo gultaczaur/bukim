@@ -1,0 +1,61 @@
+.ulbox{
+    width: 260px;
+    height: 595px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    
+    
+    ul{
+        position: relative;
+        li{
+            padding: 15px 17px 0 !important;
+            transition: .3s;
+            cursor: pointer;
+            a{
+                display: block;
+                padding: 0 0 17px;
+                width: 100%;
+                color: black;
+                font-size: 14px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.216);
+                .fire{
+                    color: red;
+                }
+                .icon{
+                    width: 27px;
+                    height: 27px;
+                    margin-bottom: -10px;
+                    margin-right: 10px;
+                }
+            }
+            &:hover{
+                background-color: #f4f4f4;
+            }
+            
+        }
+        .lihover-one{
+            
+            .hoverdiv-One{
+                position: absolute;
+                background-color: white !important;
+                top: 0;
+                left: 100%;
+                width: 100% !important;
+                height: 100% !important;
+                border: 1px solid rgba(0, 0, 0, 0.181);
+                display: none;
+                z-index: 99999;
+                li{
+                    height: 54.8px;
+                }
+            }
+            &:hover{
+                .hoverdiv-One{
+                    display: block;
+                    animation: hoveranimation .4s forwards;
+                }
+            }
+        }
+    }
+}

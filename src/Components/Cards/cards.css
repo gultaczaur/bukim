@@ -1,0 +1,153 @@
+.cards{
+    display: flex;
+  
+.cards-cont {
+    padding: 15px;
+    width: 240px;
+    height: 410px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    border: 1px solid #dfdfdf;
+    transition: .5s;
+    &:hover{
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-cash {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #ffd100;
+        text-align: center;
+
+        span {
+            font-size: 11px;
+            margin-top: 3px;
+            letter-spacing: .35px;
+            line-height: 1.1;
+        }
+    }
+
+    .cards-heart-scale {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        gap: 5px;
+    }
+
+    .cards-heart-icon {
+        transition: .5s;
+        width: 20px;
+        height: 20px;
+        color: #373a36;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    .cards-scale a {
+        transition: .5s;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url(/src/Gallery/scale-img-texno.svg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .cards-scale a:hover {
+        background-image: url(/src/Gallery/red-scale-texno.svg);
+    }
+
+
+
+    .card-img {
+        width: 206.65px;
+        height: 220.65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    h3 {
+        line-height: 1.3;
+        letter-spacing: -.35px;
+        font-size: 1.07em;
+        line-height: 1.3;
+        letter-spacing: -.35px;
+        height: 40px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        /* -webkit-line-clamp: 2; */
+        -webkit-box-orient: vertical;
+        margin-top: 10px;
+    }
+
+    .price-payment {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+
+        p {
+            font-size: 11px;
+        }
+
+        strong {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        span {
+            font-size: 14px;
+        }
+
+        .price {
+            width: 40%;
+            border-right: 2px solid #373a36;
+            /* padding-left:15px; */
+        }
+
+       /* .payment {
+            /* width: 70%; */
+            /* border-left: 2px solid #373a36;
+            padding-left:15px;
+        } */ 
+    }
+
+    button {
+        width: 100%;
+        background: #EAEAEA;
+        color: #373a36;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        border-radius: 3px;
+        border: 0;
+        box-shadow: none;
+        outline: 0;
+        font-size: 14px;
+        font-weight: 500;
+        overflow: hidden;
+        cursor: pointer;
+    }
+}}
