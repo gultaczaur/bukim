@@ -13,6 +13,7 @@ import Wishlist from './Pages/Wishlist/Wishlist'
 import SearchLogin from './Pages/Log in/SearchLogin'
 
 // bu kim sekerim 
+// o da benim şekerim
 
 const App = () => {
   return (
