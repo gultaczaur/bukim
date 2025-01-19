@@ -12,6 +12,8 @@ import Service from './Pages/Service/Service'
 import Wishlist from './Pages/Wishlist/Wishlist'
 import SearchLogin from './Pages/Log in/SearchLogin'
 
+// bu kim sekerim 
+
 const App = () => {
   return (
     <>
